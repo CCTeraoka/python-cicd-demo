@@ -54,6 +54,7 @@ class TestDivide:
         with pytest.raises(ZeroDivisionError, match="0で割ることはできません"):
             divide(1, 0)
 
+
 class TestNoMean:
     """意味のないテスト."""
 
