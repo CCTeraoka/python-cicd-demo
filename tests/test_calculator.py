@@ -2,7 +2,7 @@
 
 import pytest
 
-from src.calculator import add, divide, multiply, subtract
+from src.calculator import add, divide, multiply, subtract, no_mean
 
 
 class TestAdd:
@@ -53,3 +53,9 @@ class TestDivide:
     def test_divide_by_zero(self):
         with pytest.raises(ZeroDivisionError, match="0で割ることはできません"):
             divide(1, 0)
+
+class TestNoMean:
+    """意味のないテスト"""
+
+    def test_no_mean(self):
+        assert no_mean(1, 2) == 1

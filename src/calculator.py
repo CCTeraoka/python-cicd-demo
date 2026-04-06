@@ -25,3 +25,6 @@ def divide(a: float, b: float) -> float:
     if b == 0:
         raise ZeroDivisionError("0で割ることはできません")
     return a / b
+
+def no_mean(a: float, b: float) -> float:
+    return a
