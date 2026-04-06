@@ -27,4 +27,9 @@ def divide(a: float, b: float) -> float:
     return a / b
 
 def no_mean(a: float, b: float) -> float:
+    """2つの数値を除算する.
+
+    Raises:
+        ZeroDivisionError: bが0の場合
+    """
     return a

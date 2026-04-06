@@ -2,7 +2,7 @@
 
 import pytest
 
-from src.calculator import add, divide, multiply, subtract, no_mean
+from src.calculator import add, divide, multiply, no_mean, subtract
 
 
 class TestAdd:
@@ -55,7 +55,7 @@ class TestDivide:
             divide(1, 0)
 
 class TestNoMean:
-    """意味のないテスト"""
+    """意味のないテスト."""
 
     def test_no_mean(self):
         assert no_mean(1, 2) == 1
